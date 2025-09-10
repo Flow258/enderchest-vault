@@ -1,0 +1,23 @@
+name: EnderChestVault
+version: '1.0.0'
+main: com.flowey258.enderchestVault.EnderChestVaultPlugin
+api-version: '1.21'
+author: flowey258
+description: Replaces Ender Chest functionality with personal vaults
+
+depends: [Vault]
+softdepends: [PlayerVaults]
+
+commands:
+  enderchest:
+    description: Opens your personal vault instead of ender chest
+    usage: /enderchest
+    aliases: [ec, echest]
+
+permissions:
+  enderchest.use:
+    description: Allows using the enderchest command
+    default: true
+  enderchest.vault:
+    description: Allows accessing personal vault via enderchest
+    default: true
